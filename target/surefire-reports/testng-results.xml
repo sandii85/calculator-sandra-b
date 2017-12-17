@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="21" passed="21">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="1318" started-at="2017-12-17T13:31:34Z" finished-at="2017-12-17T13:31:36Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="1318" started-at="2017-12-17T13:31:34Z" finished-at="2017-12-17T13:31:36Z">
+      <class name="com.example.maven.calculator_sandra_b.FromMetersTest">
+        <test-method status="PASS" signature="testMeterToCmSubtract()[pri:0, instance:testMeterToCmSubtract(com.example.maven.calculator_sandra_b.FromMetersTest)]" name="testMeterToCmSubtract" duration-ms="224" started-at="2017-12-17T14:31:35Z" finished-at="2017-12-17T14:31:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMeterToCmSubtract -->
+        <test-method status="PASS" signature="testMeterToMileWithZero()[pri:0, instance:testMeterToMileWithZero(com.example.maven.calculator_sandra_b.FromMetersTest)]" name="testMeterToMileWithZero" duration-ms="99" started-at="2017-12-17T14:31:35Z" finished-at="2017-12-17T14:31:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMeterToMileWithZero -->
+        <test-method status="PASS" signature="testMeterToCmWithZero()[pri:0, instance:testMeterToCmWithZero(com.example.maven.calculator_sandra_b.FromMetersTest)]" name="testMeterToCmWithZero" duration-ms="78" started-at="2017-12-17T14:31:35Z" finished-at="2017-12-17T14:31:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMeterToCmWithZero -->
+        <test-method status="PASS" signature="testMeterToFoot()[pri:0, instance:testMeterToFoot(com.example.maven.calculator_sandra_b.FromMetersTest)]" name="testMeterToFoot" duration-ms="42" started-at="2017-12-17T14:31:35Z" finished-at="2017-12-17T14:31:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMeterToFoot -->
+        <test-method status="PASS" signature="testMeterToInch()[pri:0, instance:testMeterToInch(com.example.maven.calculator_sandra_b.FromMetersTest)]" name="testMeterToInch" duration-ms="31" started-at="2017-12-17T14:31:35Z" finished-at="2017-12-17T14:31:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMeterToInch -->
+        <test-method status="PASS" signature="testMeterToMile()[pri:0, instance:testMeterToMile(com.example.maven.calculator_sandra_b.FromMetersTest)]" name="testMeterToMile" duration-ms="42" started-at="2017-12-17T14:31:35Z" finished-at="2017-12-17T14:31:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMeterToMile -->
+        <test-method status="PASS" signature="testMeterToYard()[pri:0, instance:testMeterToYard(com.example.maven.calculator_sandra_b.FromMetersTest)]" name="testMeterToYard" duration-ms="49" started-at="2017-12-17T14:31:35Z" finished-at="2017-12-17T14:31:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMeterToYard -->
+        <test-method status="PASS" signature="testMeterToCm()[pri:0, instance:testMeterToCm(com.example.maven.calculator_sandra_b.FromMetersTest)]" name="testMeterToCm" duration-ms="40" started-at="2017-12-17T14:31:35Z" finished-at="2017-12-17T14:31:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMeterToCm -->
+        <test-method status="PASS" signature="testMeterToKm()[pri:0, instance:testMeterToKm(com.example.maven.calculator_sandra_b.FromMetersTest)]" name="testMeterToKm" duration-ms="13" started-at="2017-12-17T14:31:35Z" finished-at="2017-12-17T14:31:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMeterToKm -->
+        <test-method status="PASS" signature="testMeterToMm()[pri:0, instance:testMeterToMm(com.example.maven.calculator_sandra_b.FromMetersTest)]" name="testMeterToMm" duration-ms="11" started-at="2017-12-17T14:31:35Z" finished-at="2017-12-17T14:31:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMeterToMm -->
+        <test-method status="PASS" signature="testMeterToMmSubtract()[pri:0, instance:testMeterToMmSubtract(com.example.maven.calculator_sandra_b.FromMetersTest)]" name="testMeterToMmSubtract" duration-ms="16" started-at="2017-12-17T14:31:35Z" finished-at="2017-12-17T14:31:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMeterToMmSubtract -->
+        <test-method status="PASS" signature="testMeterToFootSubtract()[pri:0, instance:testMeterToFootSubtract(com.example.maven.calculator_sandra_b.FromMetersTest)]" name="testMeterToFootSubtract" duration-ms="24" started-at="2017-12-17T14:31:35Z" finished-at="2017-12-17T14:31:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMeterToFootSubtract -->
+        <test-method status="PASS" signature="testMeterToYardSubtract()[pri:0, instance:testMeterToYardSubtract(com.example.maven.calculator_sandra_b.FromMetersTest)]" name="testMeterToYardSubtract" duration-ms="54" started-at="2017-12-17T14:31:36Z" finished-at="2017-12-17T14:31:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMeterToYardSubtract -->
+        <test-method status="PASS" signature="testMeterToKmSubtract()[pri:0, instance:testMeterToKmSubtract(com.example.maven.calculator_sandra_b.FromMetersTest)]" name="testMeterToKmSubtract" duration-ms="11" started-at="2017-12-17T14:31:36Z" finished-at="2017-12-17T14:31:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMeterToKmSubtract -->
+        <test-method status="PASS" signature="testMeterToInchSubtract()[pri:0, instance:testMeterToInchSubtract(com.example.maven.calculator_sandra_b.FromMetersTest)]" name="testMeterToInchSubtract" duration-ms="37" started-at="2017-12-17T14:31:36Z" finished-at="2017-12-17T14:31:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMeterToInchSubtract -->
+        <test-method status="PASS" signature="testMeterToMileSubtract()[pri:0, instance:testMeterToMileSubtract(com.example.maven.calculator_sandra_b.FromMetersTest)]" name="testMeterToMileSubtract" duration-ms="32" started-at="2017-12-17T14:31:36Z" finished-at="2017-12-17T14:31:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMeterToMileSubtract -->
+        <test-method status="PASS" signature="testMeterToMmWithZero()[pri:0, instance:testMeterToMmWithZero(com.example.maven.calculator_sandra_b.FromMetersTest)]" name="testMeterToMmWithZero" duration-ms="28" started-at="2017-12-17T14:31:36Z" finished-at="2017-12-17T14:31:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMeterToMmWithZero -->
+        <test-method status="PASS" signature="testMeterToFootWithZero()[pri:0, instance:testMeterToFootWithZero(com.example.maven.calculator_sandra_b.FromMetersTest)]" name="testMeterToFootWithZero" duration-ms="21" started-at="2017-12-17T14:31:36Z" finished-at="2017-12-17T14:31:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMeterToFootWithZero -->
+        <test-method status="PASS" signature="testMeterToYardWithZero()[pri:0, instance:testMeterToYardWithZero(com.example.maven.calculator_sandra_b.FromMetersTest)]" name="testMeterToYardWithZero" duration-ms="17" started-at="2017-12-17T14:31:36Z" finished-at="2017-12-17T14:31:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMeterToYardWithZero -->
+        <test-method status="PASS" signature="testMeterToKmWithZero()[pri:0, instance:testMeterToKmWithZero(com.example.maven.calculator_sandra_b.FromMetersTest)]" name="testMeterToKmWithZero" duration-ms="8" started-at="2017-12-17T14:31:36Z" finished-at="2017-12-17T14:31:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMeterToKmWithZero -->
+        <test-method status="PASS" signature="testMeterToInchWithZero()[pri:0, instance:testMeterToInchWithZero(com.example.maven.calculator_sandra_b.FromMetersTest)]" name="testMeterToInchWithZero" duration-ms="13" started-at="2017-12-17T14:31:36Z" finished-at="2017-12-17T14:31:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMeterToInchWithZero -->
+      </class> <!-- com.example.maven.calculator_sandra_b.FromMetersTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MainFrame.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">calculator-sandra-b</a> &gt; <a href="index.source.html" class="el_package">com.example.maven.calculator_sandra_b</a> &gt; <span class="el_source">MainFrame.java</span></div><h1>MainFrame.java</h1><pre class="source lang-java linenums">package com.example.maven.calculator_sandra_b;
+
+import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class MainFrame {
+
+	private JFrame frmConverter;
+	private JTextField tx_setMeter;
+	private JTextField tx_Result;
+<span class="nc" id="L17">	private JLabel lbMeter = new JLabel(&quot;Meter :&quot;);</span>
+<span class="nc" id="L18">	private JLabel lblResult = new JLabel(&quot;Result:&quot;);</span>
+<span class="nc" id="L19">	private JButton btnKm = new JButton(&quot;KM&quot;);</span>
+<span class="nc" id="L20">	private JButton btnYard = new JButton(&quot;Yard&quot;);</span>
+<span class="nc" id="L21">	private JButton btnMile = new JButton(&quot;Mile&quot;);</span>
+<span class="nc" id="L22">	private JButton btnCM = new JButton(&quot;CM&quot;);</span>
+<span class="nc" id="L23">	private JButton btnFoot = new JButton(&quot;Foot&quot;);</span>
+<span class="nc" id="L24">	private JButton btnMM = new JButton(&quot;MM&quot;);</span>
+<span class="nc" id="L25">	private JButton btnInch = new JButton(&quot;Inch&quot;);</span>
+
+
+<span class="nc" id="L28">	FromMeters fromMeters = new FromMeters();</span>
+
+	double valueMeterToFoot;
+	double valueMeterToMm;
+	double valueMeterToCm;
+	double valueMeterToMile;
+	double valueMeterToYard;
+	double valueMeterToKm;
+	double valueMeterToInch;
+	double convertedValue;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+<span class="nc" id="L43">		EventQueue.invokeLater(new Runnable() {</span>
+			public void run() {
+				try {
+<span class="nc" id="L46">					MainFrame window = new MainFrame();</span>
+<span class="nc" id="L47">					window.frmConverter.setVisible(true);</span>
+<span class="nc" id="L48">				} catch (Exception e) {</span>
+<span class="nc" id="L49">					e.printStackTrace();</span>
+<span class="nc" id="L50">				}</span>
+<span class="nc" id="L51">			}</span>
+		});
+<span class="nc" id="L53">	}</span>
+
+	/**
+	 * Create the application.
+	 */
+<span class="nc" id="L58">	public MainFrame() {</span>
+<span class="nc" id="L59">		initialize();</span>
+<span class="nc" id="L60">	}</span>
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+<span class="nc" id="L66">		frmConverter = new JFrame();</span>
+<span class="nc" id="L67">		frmConverter.setTitle(&quot;Converter&quot;);</span>
+<span class="nc" id="L68">		frmConverter.setBounds(100, 100, 450, 300);</span>
+<span class="nc" id="L69">		frmConverter.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</span>
+<span class="nc" id="L70">		frmConverter.getContentPane().setLayout(null);</span>
+
+<span class="nc" id="L72">		lbMeter.setBounds(116, 39, 98, 31);</span>
+<span class="nc" id="L73">		frmConverter.getContentPane().add(lbMeter);</span>
+
+<span class="nc" id="L75">		tx_setMeter = new JTextField();</span>
+<span class="nc" id="L76">		tx_setMeter.setBounds(126, 65, 151, 31);</span>
+<span class="nc" id="L77">		frmConverter.getContentPane().add(tx_setMeter);</span>
+<span class="nc" id="L78">		tx_setMeter.setColumns(10);</span>
+
+<span class="nc" id="L80">		tx_Result = new JTextField();</span>
+<span class="nc" id="L81">		tx_Result.setBounds(69, 214, 260, 31);</span>
+<span class="nc" id="L82">		frmConverter.getContentPane().add(tx_Result);</span>
+<span class="nc" id="L83">		tx_Result.setColumns(10);</span>
+
+<span class="nc" id="L85">		lblResult.setBounds(56, 199, 70, 15);</span>
+<span class="nc" id="L86">		frmConverter.getContentPane().add(lblResult);</span>
+
+<span class="nc" id="L88">		btnInch.setBounds(69, 150, 75, 25);</span>
+<span class="nc" id="L89">		frmConverter.getContentPane().add(btnInch);</span>
+
+<span class="nc" id="L91">		btnMM.setBounds(239, 150, 75, 25);</span>
+<span class="nc" id="L92">		frmConverter.getContentPane().add(btnMM);</span>
+
+<span class="nc" id="L94">		btnFoot.setBounds(287, 108, 75, 25);</span>
+<span class="nc" id="L95">		frmConverter.getContentPane().add(btnFoot);</span>
+
+<span class="nc" id="L97">		btnCM.setBounds(154, 150, 75, 25);</span>
+<span class="nc" id="L98">		frmConverter.getContentPane().add(btnCM);</span>
+
+<span class="nc" id="L100">		btnMile.setBounds(117, 108, 75, 25);</span>
+<span class="nc" id="L101">		frmConverter.getContentPane().add(btnMile);</span>
+
+<span class="nc" id="L103">		btnYard.setBounds(202, 108, 75, 25);</span>
+<span class="nc" id="L104">		frmConverter.getContentPane().add(btnYard);</span>
+
+<span class="nc" id="L106">		btnKm.setBounds(32, 108, 75, 25);</span>
+<span class="nc" id="L107">		frmConverter.getContentPane().add(btnKm);</span>
+
+<span class="nc" id="L109">		btnKm.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+<span class="nc bnc" id="L111" title="All 2 branches missed.">				if (!(tx_setMeter.getText().equals(&quot;&quot;))) {</span>
+<span class="nc" id="L112">					valueMeterToKm = Double.parseDouble(tx_setMeter.getText());</span>
+<span class="nc" id="L113">					convertedValue = fromMeters.meterToKm(valueMeterToKm);</span>
+<span class="nc" id="L114">					tx_Result.setText(&quot;Km = &quot; + convertedValue);</span>
+<span class="nc" id="L115">					cleanTextFields();</span>
+				} else {
+<span class="nc" id="L117">					tx_Result.setText(&quot;No value, please try again&quot;);</span>
+<span class="nc" id="L118">					cleanTextFields();</span>
+				}
+<span class="nc" id="L120">			}</span>
+		});
+<span class="nc" id="L122">		btnYard.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+<span class="nc bnc" id="L124" title="All 2 branches missed.">				if (!(tx_setMeter.getText().equals(&quot;&quot;))) {</span>
+<span class="nc" id="L125">					valueMeterToYard = Double.parseDouble(tx_setMeter.getText());</span>
+<span class="nc" id="L126">					convertedValue = fromMeters.meterToYard(valueMeterToYard);</span>
+<span class="nc" id="L127">					tx_Result.setText(&quot;Yard = &quot; + convertedValue);</span>
+<span class="nc" id="L128">					cleanTextFields();</span>
+				} else {
+<span class="nc" id="L130">					tx_Result.setText(&quot;No value, please try again&quot;);</span>
+<span class="nc" id="L131">					cleanTextFields();</span>
+				}
+<span class="nc" id="L133">			}</span>
+		});
+<span class="nc" id="L135">		btnMile.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+<span class="nc bnc" id="L137" title="All 2 branches missed.">				if (!(tx_setMeter.getText().equals(&quot;&quot;))) {</span>
+<span class="nc" id="L138">					valueMeterToMile = Double.parseDouble(tx_setMeter.getText());</span>
+<span class="nc" id="L139">					convertedValue = fromMeters.meterToMile(valueMeterToMile);</span>
+<span class="nc" id="L140">					tx_Result.setText(&quot;Mile = &quot; + convertedValue);</span>
+<span class="nc" id="L141">					cleanTextFields();</span>
+				} else {
+<span class="nc" id="L143">					tx_Result.setText(&quot;No value, please try again&quot;);</span>
+<span class="nc" id="L144">					cleanTextFields();</span>
+				}
+<span class="nc" id="L146">			}</span>
+		});
+<span class="nc" id="L148">		btnCM.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+<span class="nc bnc" id="L150" title="All 2 branches missed.">				if (!(tx_setMeter.getText().equals(&quot;&quot;))) {</span>
+<span class="nc" id="L151">					valueMeterToCm = Double.parseDouble(tx_setMeter.getText());</span>
+<span class="nc" id="L152">					convertedValue = fromMeters.meterToCm(valueMeterToCm);</span>
+<span class="nc" id="L153">					tx_Result.setText(&quot;CM = &quot; + convertedValue);</span>
+<span class="nc" id="L154">					cleanTextFields();</span>
+				} else {
+<span class="nc" id="L156">					tx_Result.setText(&quot;No value, please try again&quot;);</span>
+<span class="nc" id="L157">					cleanTextFields();</span>
+				}
+<span class="nc" id="L159">			}</span>
+		});
+<span class="nc" id="L161">		btnFoot.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+<span class="nc bnc" id="L163" title="All 2 branches missed.">				if (!(tx_setMeter.getText().equals(&quot;&quot;))) {</span>
+<span class="nc" id="L164">					valueMeterToFoot = Double.parseDouble(tx_setMeter.getText());</span>
+<span class="nc" id="L165">					convertedValue = fromMeters.meterToFoot(valueMeterToFoot);</span>
+<span class="nc" id="L166">					tx_Result.setText(&quot;Foot = &quot; + convertedValue);</span>
+<span class="nc" id="L167">					cleanTextFields();</span>
+				} else {
+<span class="nc" id="L169">					tx_Result.setText(&quot;No value, please try again&quot;);</span>
+<span class="nc" id="L170">					cleanTextFields();</span>
+				}
+<span class="nc" id="L172">			}</span>
+		});
+
+<span class="nc" id="L175">		btnMM.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+<span class="nc bnc" id="L177" title="All 2 branches missed.">				if (!(tx_setMeter.getText().equals(&quot;&quot;))) {</span>
+<span class="nc" id="L178">					valueMeterToMm = Double.parseDouble(tx_setMeter.getText());</span>
+<span class="nc" id="L179">					convertedValue = fromMeters.meterToMm(valueMeterToMm);</span>
+<span class="nc" id="L180">					tx_Result.setText(&quot;MM = &quot; + convertedValue);</span>
+<span class="nc" id="L181">					cleanTextFields();</span>
+				} else {
+<span class="nc" id="L183">					tx_Result.setText(&quot;No value, please try again&quot;);</span>
+<span class="nc" id="L184">					cleanTextFields();</span>
+				}
+<span class="nc" id="L186">			}</span>
+		});
+
+<span class="nc" id="L189">		btnInch.addActionListener(new ActionListener() {</span>
+			public void actionPerformed(ActionEvent e) {
+<span class="nc bnc" id="L191" title="All 2 branches missed.">				if (!(tx_setMeter.getText().equals(&quot;&quot;))) {</span>
+<span class="nc" id="L192">					valueMeterToInch = Double.parseDouble(tx_setMeter.getText());</span>
+<span class="nc" id="L193">					convertedValue = fromMeters.meterToInch(valueMeterToInch);</span>
+<span class="nc" id="L194">					tx_Result.setText(&quot;Inch = &quot; + convertedValue);</span>
+<span class="nc" id="L195">					cleanTextFields();</span>
+				} else {
+<span class="nc" id="L197">					tx_Result.setText(&quot;No value, please try again&quot;);</span>
+<span class="nc" id="L198">					cleanTextFields();</span>
+				}
+<span class="nc" id="L200">			}</span>
+		});
+
+<span class="nc" id="L203">	}</span>
+
+	public void cleanTextFields() {
+<span class="nc" id="L206">		tx_setMeter.setText(&quot;&quot;);</span>
+<span class="nc" id="L207">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>

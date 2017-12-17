@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.maven.calculator_sandra_b.FromMetersTest
+-------------------------------------------------------------------------------
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.319 sec - in com.example.maven.calculator_sandra_b.FromMetersTest

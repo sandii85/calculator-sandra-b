@@ -1,0 +1,184 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>21/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Dec 17 14:31:34 CET 2017</td>
+</tr>
+<tr><td>Total time:</td><td>1 seconds (1318 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.example.maven.calculator_sandra_b.FromMetersTest.testMeterToCm()'><b>testMeterToCm</b><br>Test class: com.example.maven.calculator_sandra_b.FromMetersTest</td>
+<td></td>
+<td>0</td>
+<td>testMeterToCm(com.example.maven.calculator_sandra_b.FromMetersTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_sandra_b.FromMetersTest.testMeterToCmSubtract()'><b>testMeterToCmSubtract</b><br>Test class: com.example.maven.calculator_sandra_b.FromMetersTest</td>
+<td></td>
+<td>0</td>
+<td>testMeterToCmSubtract(com.example.maven.calculator_sandra_b.FromMetersTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_sandra_b.FromMetersTest.testMeterToCmWithZero()'><b>testMeterToCmWithZero</b><br>Test class: com.example.maven.calculator_sandra_b.FromMetersTest</td>
+<td></td>
+<td>0</td>
+<td>testMeterToCmWithZero(com.example.maven.calculator_sandra_b.FromMetersTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_sandra_b.FromMetersTest.testMeterToFoot()'><b>testMeterToFoot</b><br>Test class: com.example.maven.calculator_sandra_b.FromMetersTest</td>
+<td></td>
+<td>0</td>
+<td>testMeterToFoot(com.example.maven.calculator_sandra_b.FromMetersTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_sandra_b.FromMetersTest.testMeterToFootSubtract()'><b>testMeterToFootSubtract</b><br>Test class: com.example.maven.calculator_sandra_b.FromMetersTest</td>
+<td></td>
+<td>0</td>
+<td>testMeterToFootSubtract(com.example.maven.calculator_sandra_b.FromMetersTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_sandra_b.FromMetersTest.testMeterToFootWithZero()'><b>testMeterToFootWithZero</b><br>Test class: com.example.maven.calculator_sandra_b.FromMetersTest</td>
+<td></td>
+<td>0</td>
+<td>testMeterToFootWithZero(com.example.maven.calculator_sandra_b.FromMetersTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_sandra_b.FromMetersTest.testMeterToInch()'><b>testMeterToInch</b><br>Test class: com.example.maven.calculator_sandra_b.FromMetersTest</td>
+<td></td>
+<td>0</td>
+<td>testMeterToInch(com.example.maven.calculator_sandra_b.FromMetersTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_sandra_b.FromMetersTest.testMeterToInchSubtract()'><b>testMeterToInchSubtract</b><br>Test class: com.example.maven.calculator_sandra_b.FromMetersTest</td>
+<td></td>
+<td>0</td>
+<td>testMeterToInchSubtract(com.example.maven.calculator_sandra_b.FromMetersTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_sandra_b.FromMetersTest.testMeterToInchWithZero()'><b>testMeterToInchWithZero</b><br>Test class: com.example.maven.calculator_sandra_b.FromMetersTest</td>
+<td></td>
+<td>0</td>
+<td>testMeterToInchWithZero(com.example.maven.calculator_sandra_b.FromMetersTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_sandra_b.FromMetersTest.testMeterToKm()'><b>testMeterToKm</b><br>Test class: com.example.maven.calculator_sandra_b.FromMetersTest</td>
+<td></td>
+<td>0</td>
+<td>testMeterToKm(com.example.maven.calculator_sandra_b.FromMetersTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_sandra_b.FromMetersTest.testMeterToKmSubtract()'><b>testMeterToKmSubtract</b><br>Test class: com.example.maven.calculator_sandra_b.FromMetersTest</td>
+<td></td>
+<td>0</td>
+<td>testMeterToKmSubtract(com.example.maven.calculator_sandra_b.FromMetersTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_sandra_b.FromMetersTest.testMeterToKmWithZero()'><b>testMeterToKmWithZero</b><br>Test class: com.example.maven.calculator_sandra_b.FromMetersTest</td>
+<td></td>
+<td>0</td>
+<td>testMeterToKmWithZero(com.example.maven.calculator_sandra_b.FromMetersTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_sandra_b.FromMetersTest.testMeterToMile()'><b>testMeterToMile</b><br>Test class: com.example.maven.calculator_sandra_b.FromMetersTest</td>
+<td></td>
+<td>0</td>
+<td>testMeterToMile(com.example.maven.calculator_sandra_b.FromMetersTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_sandra_b.FromMetersTest.testMeterToMileSubtract()'><b>testMeterToMileSubtract</b><br>Test class: com.example.maven.calculator_sandra_b.FromMetersTest</td>
+<td></td>
+<td>0</td>
+<td>testMeterToMileSubtract(com.example.maven.calculator_sandra_b.FromMetersTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_sandra_b.FromMetersTest.testMeterToMileWithZero()'><b>testMeterToMileWithZero</b><br>Test class: com.example.maven.calculator_sandra_b.FromMetersTest</td>
+<td></td>
+<td>0</td>
+<td>testMeterToMileWithZero(com.example.maven.calculator_sandra_b.FromMetersTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_sandra_b.FromMetersTest.testMeterToMm()'><b>testMeterToMm</b><br>Test class: com.example.maven.calculator_sandra_b.FromMetersTest</td>
+<td></td>
+<td>0</td>
+<td>testMeterToMm(com.example.maven.calculator_sandra_b.FromMetersTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_sandra_b.FromMetersTest.testMeterToMmSubtract()'><b>testMeterToMmSubtract</b><br>Test class: com.example.maven.calculator_sandra_b.FromMetersTest</td>
+<td></td>
+<td>0</td>
+<td>testMeterToMmSubtract(com.example.maven.calculator_sandra_b.FromMetersTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_sandra_b.FromMetersTest.testMeterToMmWithZero()'><b>testMeterToMmWithZero</b><br>Test class: com.example.maven.calculator_sandra_b.FromMetersTest</td>
+<td></td>
+<td>0</td>
+<td>testMeterToMmWithZero(com.example.maven.calculator_sandra_b.FromMetersTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_sandra_b.FromMetersTest.testMeterToYard()'><b>testMeterToYard</b><br>Test class: com.example.maven.calculator_sandra_b.FromMetersTest</td>
+<td></td>
+<td>0</td>
+<td>testMeterToYard(com.example.maven.calculator_sandra_b.FromMetersTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_sandra_b.FromMetersTest.testMeterToYardSubtract()'><b>testMeterToYardSubtract</b><br>Test class: com.example.maven.calculator_sandra_b.FromMetersTest</td>
+<td></td>
+<td>0</td>
+<td>testMeterToYardSubtract(com.example.maven.calculator_sandra_b.FromMetersTest)</td></tr>
+<tr>
+<td title='com.example.maven.calculator_sandra_b.FromMetersTest.testMeterToYardWithZero()'><b>testMeterToYardWithZero</b><br>Test class: com.example.maven.calculator_sandra_b.FromMetersTest</td>
+<td></td>
+<td>0</td>
+<td>testMeterToYardWithZero(com.example.maven.calculator_sandra_b.FromMetersTest)</td></tr>
+</table><p>
+</body>
+</html>
